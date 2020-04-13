@@ -2,6 +2,14 @@
 cgb-acid2 is a test for developers of Game Boy Color emulators to verify their
 emulation of the Game Boy Color's Pixel Processing Unit (PPU).
 
+[Download the ROM](https://github.com/mattcurrie/cgb-acid2/releases/download/v1.0/cgb-acid2.gbc),
+or build using [RGBDS](https://github.com/rednex/rgbds):
+
+```
+git clone --recurse-submodules https://github.com/mattcurrie/cgb-acid2
+cd cgb-acid2 && make
+```
+
 ## Reference Image
 An accurate emulator should generate output identical to the image below:
 

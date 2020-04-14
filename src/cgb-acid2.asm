@@ -194,7 +194,6 @@ LY_70:
 
     ld hl, rLCDC
     res 6, [hl] ; window map $9800
-    set 1, [hl] ; objects enabled
 
     ld a, $80
     ldh [rLYC], a
@@ -206,6 +205,15 @@ LY_80:
     ld hl, rLCDC
     set 3, [hl] ; bg map $9c00
     res 4, [hl] ; bg tiles at $8800-97ff
+
+    ld a, $81
+    ldh [rLYC], a
+    ld hl, LY_81
+    reti
+
+
+LY_81:
+    ld hl, rLCDC
     res 5, [hl] ; disable window
     set 6, [hl] ; window map $9c00
 
@@ -220,6 +228,15 @@ LY_8F:
     ld hl, rLCDC
     res 3, [hl]
     set 4, [hl]
+
+    ld a, $90
+    ldh [rLYC], a
+    ld hl, LY_90
+    reti
+
+LY_90:
+    ld hl, rLCDC
+    set 1, [hl] ; enable objects
 
     ld a, $10
     ldh [rLYC], a

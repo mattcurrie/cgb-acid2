@@ -1,16 +1,17 @@
 
 
 OAMData::
-    db $50, $50, $4, $08    ; tile data from vram bank 1
+    ; nose - all tile data from vram bank 1
+    db $50, $50, $4, $08
     db $50, $58, $4, $28
     db $58, $50, $4, $48
     db $58, $58, $4, $68
 
-    ; background
+    ; left eye - overlapping background color 0 only
     db $38, $40, $1, $82    ; uses green palette with priority so should show through color 0 bg, replacing the red top left corner of eye
     db $38, $48, $1, $02    ; green square. should show through color 0 because tile has set background to always have priority set
 
-    ; window
+    ; right eye - overlapping window color 0 only
     db $38, $60, $1, $82    ; uses green palette with priority so should show through color 0 bg, replacing the red top left corner of eye
     db $38, $68, $1, $02    ; green square. should show through color 0 because tile has set background to always have priority set
 
@@ -27,6 +28,7 @@ OAMData::
     db $10, $78, "d", 3
     db $10, $80, 1, 4       ; this solid white box shouldn't display - 10 sprite limit per line
 
+    ; mouth
     db $68, $38, 6, $00     ; sprite size is 8x16 when these sprites are rendered
     db $68, $40, 6, $40     ; y-flipped 8x16 sprite
     db $68, $48, 6, $40

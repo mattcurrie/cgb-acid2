@@ -138,6 +138,10 @@ Main::
     ldh [rLYC], a
     ld hl, LY_10
 
+    ; initialise the frame counter
+    ; a source code breakpoint will be triggered after 10 frames
+    ld b, 10
+
     ei
 
 .forever
@@ -238,6 +242,15 @@ LY_90:
     ld hl, rLCDC
     set 1, [hl] ; enable objects
 
+    ; decrease the frame counter
+    dec b
+    jr nz, .skip
+
+    ; source code breakpoint - good time to take a 
+    ; screenshot to compare to reference image
+    ld b, b
+
+.skip:
     ld a, $10
     ldh [rLYC], a
     ld hl, LY_10

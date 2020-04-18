@@ -10,6 +10,8 @@ git clone --recurse-submodules https://github.com/mattcurrie/cgb-acid2
 cd cgb-acid2 && make
 ```
 
+For testing the Game Boy (DMG) you can try [dmg-acid2](https://github.com/mattcurrie/dmg-acid2).
+
 ## Reference Image
 An accurate emulator should generate output identical to the image below:
 

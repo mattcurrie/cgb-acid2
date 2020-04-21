@@ -128,7 +128,7 @@ all possible failures.
 | ![failure image](img/failures/tile-sel.png) | Background/Window Tile Data (bit 4) |
 | ![failure image](img/failures/win-enable.png) | Window Enable (bit 5) |
 | ![failure image](img/failures/win-map.png) | Window Tile Map (bit 6) |
-| ![failure image](img/failures/win-line-counter.png) | Eye displayed instead of right chin |
+| ![failure image](img/failures/win-line-counter.png) | Window internal line counter |
 | ![failure image](img/failures/obj-priority-mode.png) | Object Priority Mode (DMG/CGB) |
 | ![failure image](img/failures/10-obj-limit.png) | 10 object per line limit |
 | ![failure image](img/failures/8x16-obj-tile-index-bit-0.png) | Bit 0 of tile index for 8x16 objects should be ignored |

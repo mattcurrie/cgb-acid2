@@ -121,7 +121,7 @@ all possible failures.
 | ![failure image](img/failures/obj-horizontal-flip.png) | Object Horizontal Flip (bit 5) |
 | ![failure image](img/failures/obj-vertical-flip.png) | Object Vertical Flip (bit 6) |
 | ![failure image](img/failures/obj-to-bg-priority.png) | Object to Background Priority (bit 7) |
-| ![failure image](img/failures/master-priority.png) | Master Priority (bit 0) |
+| ![failure image](img/failures/master-priority.png)  ![failure image](img/failures/master-priority-dmg-white.png)   ![failure image](img/failures/master-priority-dmg-green.png) | Master Priority (bit 0) |
 | ![failure image](img/failures/obj-enable.png) | Object Enable (bit 1) |
 | ![failure image](img/failures/obj-size.png) | Object Size (bit 2) |
 | ![failure image](img/failures/bg-map.png) | Background Tile Map (bit 3) |
